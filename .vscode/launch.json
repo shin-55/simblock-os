@@ -1,0 +1,45 @@
+{
+    // IntelliSense を使用して利用可能な属性を学べます。
+    // 既存の属性の説明をホバーして表示します。
+    // 詳細情報は次を確認してください: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python: 現在のファイル",
+            "type": "python",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal",
+            "justMyCode": true,
+        },
+        {
+            "type": "java",
+            "name": "Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "simblock.simulator.Main",
+            "projectName": "simulator"
+        },
+        {
+            "type": "java",
+            "name": "Attach Process",
+            "request": "attach",
+            "hostName": "localhost",
+            "port": 5005,
+            // "preLaunchTask": "build_and_launch"
+        },
+        {
+            "type": "java",
+            "name": "Run and Attach Process",
+            "request": "attach",
+            "hostName": "localhost",
+            "port": 5005,
+            "preLaunchTask": "build_and_launch"
+        }
+    ]
+}

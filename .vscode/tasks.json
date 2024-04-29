@@ -1,0 +1,9 @@
+{
+    "version": "2.0.0",
+    "tasks": [{
+        "label": "build_and_launch",
+        "command": "bash", // Could be any other shell command
+        "args": ["-c", "gradle build && (gradle :simulator:run --debug-jvm &); sleep 5"],
+        "type": "shell"
+    }]
+}
